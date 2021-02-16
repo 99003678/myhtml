@@ -1,0 +1,33 @@
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.head{
+  background-color: lightblue;
+
+}
+.top{
+  background-color: lightgreen;
+}
+.mid{
+  background-color: orange;
+}
+.low{
+  background-color: yellow;
+}
+.worst{
+  background-color: red;
+}
+
+.yz
+{
+margin-top: 150px;
+}
+.lo
+{
+  height: 40px;
+}
+.lo1{
+  height: 40px;
+
+}
