@@ -1,0 +1,67 @@
+<html>
+<head>
+  <style>
+    .required:after {
+        content:" *";
+        color: red;
+      }
+      .me{
+        margin-left:250px;
+        margin-right:250px;
+        background-color:yellow;
+        padding-bottom:40px;
+        border:2px solid black;
+
+      }
+  </style>
+<script>
+
+function fun1() {
+  var t1=document.getElementById("team1").value;
+  var t2=document.getElementById("team2").value;
+  var d=document.getElementById("da").value;
+  var t=document.getElementById("ti").value;
+  var ts1=document.getElementById("tes1").value;
+  var ts2=document.getElementById("tes2").value;
+  var drw="draw";
+
+var sp1=ts1.split('/');
+var sp2=ts2.split('/');
+if(sp1[0]>sp2[0])
+{
+  document.getElementById("dem").innerHTML=t1;
+}
+else if(sp1[0]<sp2[0]){
+  document.getElementById("dem").innerHTML=t2;
+}
+else  if(parseInt(sp1[0])==parseInt(sp2[0])){
+  document.getElementById("dem").innerHTML=drw;
+}
+}
+</script>
+</head>
+<body>
+  <section class="me">
+  <br><br>
+<center>
+  <div>
+<h1>Match Summary</h1><br>
+</div>
+<div>
+<table>
+<tr><td>Team A: <br><br></td><td><input type="text" id="team1" placeholder="Team A"><br><br></td></tr>
+<tr><td>Team B: <br><br></td><td><input type="text" id="team2" placeholder="Team B"><br><br></td></tr>
+<tr><td>Date: <br><br></td><td><input type="date" id="da" placeholder="DD/MM/YYYY"><br><br></td></tr>
+<tr><td>Time:<br><br> </td><td><input type="time" id="ti" placeholder="HH:MM:SS"><br><br></td></tr>
+<tr><td>Team A Score: <br><br></td><td><input type="text" id="tes1" placeholder="Runs/Wickets"><br><br></td></tr>
+<tr><td>Team B Score: <br><br></td><td><input type="text" id="tes2" placeholder="Runs/Wickets"><br><br></td></tr>
+</table>
+</div>
+<div>
+<input type="submit" onclick="fun1()" value="Save">
+<h4>Winning Team:</h4><p id="dem"></p>
+</div>
+</center>
+</section>
+</body>
+</html>

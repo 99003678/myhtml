@@ -1,0 +1,28 @@
+
+.move{
+  margin-left: 580px;
+}
+.foot{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+    background-image: linear-gradient(to bottom right,white,black);
+}
+.size{
+  width: 60%;
+}
+.size1{
+  width: 60%;
+}
+.design{
+  background-image: linear-gradient(to bottom right,white,black);
+}
+img {
+    float: left;
+    width:  800px;
+    height: 600px;
+}
+.vid{
+  width: 620px;
+   height:480px;
+}
